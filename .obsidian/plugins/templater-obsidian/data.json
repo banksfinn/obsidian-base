@@ -17,6 +17,10 @@
     {
       "folder": "Bullet Journal/Daily",
       "template": "Templates/Daily Notes.md"
+    },
+    {
+      "folder": "Bullet Journal/Monthly",
+      "template": "Templates/Monthly.md"
     }
   ],
   "syntax_highlighting": true,

@@ -1,10 +1,10 @@
 ---
 tags:
 - monthly
-created: <% tp.file.creation_date() %>
+created: 2023-05-18 16:12
 ---
-<% tp.file.rename(moment(tp.file.title).format('MMMM YYYY')) %>
-<< [[<% fileDate = 'Bullet Journal/Monthly' + moment(tp.file.title).subtract(1, "month").startOf("month").format('MMMM YYYY') %>|Previous Month]] | [[<% fileDate = 'Bullet Journal/Monthly' + moment(tp.file.title).add(1, "month").startOf("month").format('MMMM YYYY') %>|Next Month]] >>
+
+<< [[Bullet Journal/MonthlyInvalid date|Previous Month]] | [[Bullet Journal/MonthlyInvalid date|Next Month]] >>
 
 # Active List
 ```dataviewjs
