@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Daily Notes.md",
+                "file": "Templates/Monthly.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/Daily Notes.md",
+                "file": "Templates/Monthly.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/Daily Notes.md",
+                "file": "Templates/Monthly.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/Daily Notes.md"
+                "file": "Templates/Monthly.md"
               }
             }
           },
@@ -152,13 +152,21 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "dbfolder:Create a new database table": false
     }
   },
-  "active": "7fac4ab9d4c92cf7",
+  "active": "9b901c415a8abd77",
   "lastOpenFiles": [
-    "Bullet Journal/Monthly",
+    "Bullet Journal/Habit Tracker.md",
+    "Templates/Monthly.md",
     "Templates/Daily Notes.md",
+    "Bullet Journal/Daily/2023/May/5-18-2023.md",
+    "Bullet Journal/Daily/2023/May",
+    "Bullet Journal/Daily/2023",
+    "Bullet Journal/Untitled.md",
+    "Bullet Journal/Untitled",
+    "Bullet Journal/Monthly",
     "Bullet Journal/Daily",
     "Templates",
     "Bullet Journal"

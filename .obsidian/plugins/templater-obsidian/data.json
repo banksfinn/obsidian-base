@@ -16,7 +16,7 @@
   "folder_templates": [
     {
       "folder": "Bullet Journal/Daily",
-      "template": ""
+      "template": "Templates/Daily Notes.md"
     }
   ],
   "syntax_highlighting": true,

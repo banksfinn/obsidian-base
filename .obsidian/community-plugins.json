@@ -2,5 +2,7 @@
   "calendar",
   "cm-editor-syntax-highlight-obsidian",
   "templater-obsidian",
-  "obsidian-git"
+  "obsidian-git",
+  "dataview",
+  "dbfolder"
 ]
