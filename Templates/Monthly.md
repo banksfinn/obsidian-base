@@ -3,8 +3,8 @@ tags:
 - monthly
 created: <% tp.file.creation_date() %>
 ---
-<% tp.file.rename(moment(tp.file.title).format('MMMM YYYY')) %>
-<< [[<% fileDate = 'Bullet Journal/Monthly' + moment(tp.file.title).subtract(1, "month").startOf("month").format('MMMM YYYY') %>|Previous Month]] | [[<% fileDate = 'Bullet Journal/Monthly' + moment(tp.file.title).add(1, "month").startOf("month").format('MMMM YYYY') %>|Next Month]] >>
+<% tp.file.rename(moment(tp.file.title).format('M MMMM YYYY')) %>
+<< [[<% fileDate = 'Bullet Journal/Monthly/' + moment(tp.file.title).subtract(1, "month").startOf("month").format('M MMMM YYYY') %>|Previous Month]] | [[<% fileDate = 'Bullet Journal/Monthly/' + moment(tp.file.title).add(1, "month").startOf("month").format('M MMMM YYYY') %>|Next Month]] >>
 
 # Active List
 ```dataviewjs
