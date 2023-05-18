@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Monthly.md",
+                "file": "Templates/Daily Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/Monthly.md",
+                "file": "Templates/Daily Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/Monthly.md",
+                "file": "Templates/Daily Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/Monthly.md"
+                "file": "Templates/Daily Notes.md"
               }
             }
           },
@@ -158,12 +158,21 @@
   },
   "active": "9b901c415a8abd77",
   "lastOpenFiles": [
-    "Templates/Daily Notes.md",
     "Templates/Monthly.md",
+    "Templates/Untitled",
+    "Bullet Journal/Monthly/5 May 2023.md",
+    "Bullet Journal/Monthly/6 June 2023.md",
+    "Bullet Journal/Monthly/August 2023.md",
+    "Bullet Journal/Monthly/July 2023.md",
+    "Bullet Journal/Monthly/June 2023.md",
     "Bullet Journal/Monthly/May 2023.md",
-    "Bullet Journal/Monthly/April 2023.md",
-    "June 2023.md",
+    "Bullet Journal/MonthlyApril 2023.md",
     "Bullet Journal/Daily/2023/May/5-18-2023.md",
+    "Bullet Journal/MonthlyJune 2023.md",
+    "Bullet Journal/Monthly/April 2023.md",
+    "Bullet Journal/MonthlyInvalid date.md",
+    "Templates/Daily Notes.md",
+    "June 2023.md",
     "Bullet Journal/Daily/2023/May",
     "Bullet Journal/Daily/2023",
     "May 2023.md",
