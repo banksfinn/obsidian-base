@@ -7,7 +7,38 @@ can_be_boolean: false
 or_a_number: 5
 or_a_string: example string (with spaces!)
 ---
+<%*
+// Relevant variables to all sections
+let recurringTodosFileName = "Bullet Journal/Recurring/Recurring Tasks.md"
+let recurringWorkFileName = "Bullet Journal/Recurring/Recurring Work.md"
+let relevantDate = moment(tp.file.title).format("dddd")
 
+function grabRecurringTodos(text, tag, date) {
+	let todos = []
+	let splitText = text.split(date)
+	// If we don't show the date, return nothing
+	if (!splitText || splitText.length < 2) {
+		return todos
+	}
+	// Grab the second portion (aka after the date), split by double new line
+	let relevantSection = splitText[1].split("\n\n")[0] ?? ""
+	// Skip the first element
+	for (const item of relevantSection.split("\n").slice(1)) {
+		todos.push(item.slice(0, 6) + tag + " " + item.slice(6) + "\n")
+	}
+	return todos
+}
+
+// Recurring todos
+let recurringTasksFile = tp.file.find_tfile(recurringTodosFileName)
+let recurringTasksData = await this.app.vault.read(recurringTasksFile)
+let recurringTasks = grabRecurringTodos(recurringTasksData, "#recurring", relevantDate)
+
+// Recurring todos
+let recurringWorkFile = tp.file.find_tfile(recurringWorkFileName)
+let recurringWorkData = await this.app.vault.read(recurringWorkFile)
+let recurringWork = grabRecurringTodos(recurringWorkData, "#recurring", relevantDate)
+%>
 ####           [[<% fileDate = moment(tp.file.title, 'M-D-YYYY').startOf('month').format('MMMM YYYY') %>]]
 << [[<% fileDate = 'Bullet Journal/Daily' + moment(tp.file.title, 'M-D-YYYY').subtract(1, 'd').format('YYYY') + "/" + moment(tp.file.title, 'M-D-YYYY').subtract(1, 'd').format('MMMM') + "/" + moment(tp.file.title, 'M-D-YYYY').subtract(1, 'd').format('M-D-YYYY') %>|Yesterday]] | [[<% fileDate = 'Bullet Journal/Daily' + moment(tp.file.title, 'M-D-YYYY').add(1, 'd').format('YYYY') + "/" + moment(tp.file.title, 'M-D-YYYY').add(1, 'd').format('MMMM') + "/" + moment(tp.file.title, 'M-D-YYYY').add(1, 'd').format('M-D-YYYY') %>|Tomorrow]] >>
 
@@ -15,11 +46,25 @@ or_a_string: example string (with spaces!)
 - 
 
 # To-Do
-- [ ] <% tp.file.cursor() %>
+<%*
+if (recurringTasks.length > 0) {
+	for (const todo of recurringTasks) {
+		tR += todo
+	}
+} else {
+	tR += "- [ ] "
+}
+%><% tp.file.cursor() %>
 
-
-# Work To-Do
-- [ ] 
+<%*
+let day = moment(tp.file.title).day()
+if (recurringWork.length > 0 || (day !== 6 && day !== 0)) {
+	tR += "# Work To Do\n";
+	for (const todo of recurringWork) {
+		tR += todo
+	}
+}
+%>
 
 
 # Meal Tracker

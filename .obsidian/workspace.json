@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Monthly.md",
+                "file": "Templates/Daily Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/Monthly.md",
+                "file": "Templates/Daily Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Templates/Monthly.md",
+                "file": "Templates/Daily Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/Monthly.md"
+                "file": "Templates/Daily Notes.md"
               }
             }
           },
@@ -137,12 +137,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,14 +158,16 @@
   },
   "active": "9b901c415a8abd77",
   "lastOpenFiles": [
-    "Bullet Journal/Habit Tracker.md",
-    "Templates/Monthly.md",
-    "Templates/Daily Notes.md",
     "Bullet Journal/Daily/2023/May/5-18-2023.md",
+    "Templates/Daily Notes.md",
     "Bullet Journal/Daily/2023/May",
     "Bullet Journal/Daily/2023",
+    "Bullet Journal/Habit Tracker.md",
+    "Bullet Journal/Recurring/Recurring Work.md",
+    "Bullet Journal/Recurring/Recurring Tasks.md",
+    "Templates/Monthly.md",
+    "Bullet Journal/Recurring",
     "Bullet Journal/Untitled.md",
-    "Bullet Journal/Untitled",
     "Bullet Journal/Monthly",
     "Bullet Journal/Daily",
     "Templates",
